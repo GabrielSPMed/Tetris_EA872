@@ -1,0 +1,44 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2509
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10740\viewh18520\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 Readme\
+\
+Nome: Tetris\
+Autor: Gabriel Souza Pinto Medeiros	172497\
+Numero de jogadores: 2-9\
+\
+Server:\
+-Para rodar o servidor conectar em uma rede comum e substituir o IP na linha 71\
+-Para configurar o numero de jogadores, mudar o MAX e MAXI de todos os arquivos .cpp para o numero desejado e a partir da linha 105 fazer mais ou menos threads\
+-Digitar \'93make server\'94 no terminal e rodar o programa\
+-caso as conexoes forem bem sucedidas, aparecer\'e1 uma mensagem no terminal\
+\
+Client:\
+-Conectar na rede comum e apos o server executar, execute o client apos o server ser executado\
+-Mudar o IP na linha 56\
+\
+Detalhes:\
+-Segue as diretrizes oficiais do Tetris para o tabuleiro, com 24 caracteres de altura e 10 caracteres de largura\
+-A distribui\'e7\'e3o de blocos e totalmente aleat\'f3ria e usa a fun\'e7\'e3o rand, que usa como seed o tempo do sistema\
+-Em tetris multiplayer existe um sistema de lixo\
+	-Cada vez que voce limpa n linhas simultaneamente \'e9 gerado lixo de tamanho n-1 e enviado para o adversario desejado\
+	-Voce vera uma lista de adversarios onde e preciso pressionar seu numero para mover seu foco\
+	-Quando se recebe lixo sao acrescentadas linhas abaixo. \
+\
+\
+Como jogar:\
+-Movimenta\'e7\'e3o:\
+	- \'91l\'92: esquerda\
+	- \'91j\'92: direita\
+	- \'91z\'92: giro\
+	-\'910-8\'92: mudar o foco do seu lixo\
+	\
+\
+Observa\'e7\'f5es:\
+-15% de chance de dar segfault misterioso no servidor ao receber o terceiro jogador\
+-Esse jogo foi feito sozinho, tem alguns problemas ainda no termino do jogo. \
+ }
